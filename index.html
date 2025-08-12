@@ -4,10 +4,70 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HODU - Landing</title>
+
+    <!-- 폰트 프리로드 -->
+    <link
+      rel="preload"
+      href="./fonts/SpoqaHanSansNeo_all/SpoqaHanSansNeo_OTF_subset/SpoqaHanSansNeo-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="./fonts/SpoqaHanSansNeo_all/SpoqaHanSansNeo_OTF_subset/SpoqaHanSansNeo-Bold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
+    <link rel="stylesheet" href="./styles/styles.css" />
   </head>
   <body>
-    <header></header>
-    <main></main>
+    <header id="site-header" role="banner">
+      <div class="header-container">
+        <div class="logo-container">
+          <a href="/" class="logo" aria-label="홈으로 이동">
+            <img src="./images/logo.svg" alt="홈페이지 로고" />
+          </a>
+        </div>
+
+        <button
+          class="btn-menu"
+          aria-controls="main-nav"
+          aria-expanded="false"
+          aria-label="메뉴 열기"
+        >
+          <img src="./images/menu.svg" alt="메뉴" />
+          <span class="sr-only">메뉴</span>
+        </button>
+      </div>
+
+      <nav id="main-nav" class="main-nav" role="navigation" aria-label="주요">
+        <button class="btn btn-close" aria-label="메뉴 닫기">
+          <img src="./images/arrow-right.svg" alt="닫기" />
+        </button>
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#site-header" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Support</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="btn btn-download" aria-label="앱 다운로드"
+              >Download</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>hodu 랜딩페이지</h1>
+    </main>
     <footer></footer>
   </body>
 </html>
