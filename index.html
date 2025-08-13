@@ -42,7 +42,13 @@
         </button>
       </div>
 
-      <nav id="main-nav" class="main-nav" role="navigation" aria-label="주요">
+      <nav
+        id="main-nav"
+        class="main-nav"
+        role="navigation"
+        aria-hidden="true"
+        aria-label="사이트 네비게이션"
+      >
         <button class="btn btn-close" aria-label="메뉴 닫기">
           <img src="./images/arrow-right.svg" alt="" />
         </button>
@@ -74,10 +80,120 @@
             ever since the 1500s, when an unknown
           </p>
           <a href="#" class="btn btn-download" download>Download</a>
-          <img src="./images/box-cat.png" alt="박스를 뒤집어 쓴 고양이" />
+          <figure>
+            <img src="./images/box-cat.png" alt="박스를 뒤집어 쓴 고양이" />
+          </figure>
         </div>
       </section>
+
+      <section class="features">
+        <article class="feature-card">
+          <figure>
+            <img src="images/img_4.jpg" alt="고양이가 누워있어요" />
+          </figure>
+          <div class="card-body">
+            <h2>
+              Lorem Ipsum is simply dummy text of the printing and dummy text
+            </h2>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.
+            </p>
+          </div>
+        </article>
+
+        <article class="feature-card">
+          <div class="card-body">
+            <h2>dummy text of the printing and dummy</h2>
+            <p>
+              Lorem Ipsum is simply <span>dummy text</span> of the printing and
+              typesetting industry. Lorem Ipsum has been the industry's standard
+              dummy text ever since the 1500s, when an unknown
+            </p>
+          </div>
+
+          <figure class="image-slide">
+            <img
+              src="./images/img_1.jpg"
+              alt="고양이가 고양이 타워 위에 있어요"
+            />
+            <img src="./images/img_2.jpg" alt="고양이가 벽을 보고 있어요" />
+            <img src="./images/img_3.jpg" alt="고양이가 저를 보고 있어요" />
+            <figcaption class="sr-only">고양이들의 다양한 모습</figcaption>
+          </figure>
+        </article>
+
+        <article class="cta-card">
+          <div class="cta-body">
+            <p class="cta-text">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown Ipsum is simply dummy text
+              of the printing and typesetting industry.
+            </p>
+            <a href="#" class="btn cta-button">Learn More</a>
+          </div>
+        </article>
+      </section>
+
+      <aside class="subscribe">
+        <h2>Subscribe to our Blog post</h2>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text
+        </p>
+        <form class="email-form">
+          <div class="input-wrapper">
+            <img src="./images/mail.svg" alt="" class="input-icon" />
+            <input
+              type="email"
+              placeholder="Enter your e-mail address"
+              aria-label="Email Address"
+              required
+            />
+          </div>
+        </form>
+        <button type="button" class="btn">Subscribe</button>
+      </aside>
+
+      <section class="closing-section">
+        <figure class="closing-image">
+          <img src="./images/img_5.jpg" alt="위를 바라보는 고양이" />
+        </figure>
+      </section>
     </main>
-    <footer></footer>
+    <footer class="site-footer">
+      <div class="footer-content">
+        <div class="footer-first-container">
+          <div class="footer-logo">
+            <img src="./images/logo.svg" alt="HODU" class="footer-logo" />
+          </div>
+
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="블로그">
+              <img src="./images/blog.svg" alt="Blog" />
+            </a>
+            <a href="#" class="social-link" aria-label="인스타그램">
+              <img src="./images/instagram.svg" alt="Instagram" />
+            </a>
+            <a href="#" class="social-link" aria-label="페이스북">
+              <img src="./images/facebook.svg" alt="Facebook" />
+            </a>
+            <a href="#" class="social-link" aria-label="유튜브">
+              <img src="./images/youtube.svg" alt="YouTube" />
+            </a>
+          </div>
+        </div>
+
+        <nav class="footer-nav">
+          <ul class="footer-menu">
+            <li><a href="#" class="footer-link">About</a></li>
+            <li><a href="#" class="footer-link">Blog</a></li>
+            <li><a href="#" class="footer-link">Support</a></li>
+            <li><a href="#" class="footer-link">Terms of Use</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
   </body>
 </html>
