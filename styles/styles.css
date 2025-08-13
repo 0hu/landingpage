@@ -502,11 +502,6 @@ main {
   height: 2rem;
 }
 
-/* 푸터 네비게이션 */
-.footer-nav {
-  justify-self: end;
-}
-
 .footer-menu {
   display: flex;
   flex-direction: column;
